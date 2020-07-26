@@ -72,7 +72,7 @@ The HTML <p> element defines a paragraph.
 
 # HTML Horizontal Rules?
 
-* The < hr >  tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+* The < hr >  tag defines a semantic break in an HTML page, and is most often displayed as a horizontal rule.
 
 # HTML Line Break?
 
