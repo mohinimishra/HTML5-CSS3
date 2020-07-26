@@ -157,9 +157,37 @@ The HTML <p> element defines a paragraph.
 
 * _top : Open the document  in the full body of the window.
 
+## Link to an Email Address :
+
+* Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+
+```html
+<a href = "mailto: someone@exampl.com">Send Mail </a>
+```
+
+## Button as a Link :
+
+* To use an HTML button as a link, you have to add some JavaScript code.
+
+```html
+<button onclick = "document.location = 'default.asp'"> HTML </button>
+```
+
+## Link Titles :
+* The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.
+
+```html
+<a href = "www.google.com" title = "Search anything on Google"> Google </a>
+```
+
 # Absolute URLs vs. Relative URLs :
 
 * Both examples above are using an absolute URL (a full web address) in the href attribute.
 
 * A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):
+
+# HTML Image Maps ? 
+
+* With HTML image maps, you can create clickable areas on an image.
+
 
