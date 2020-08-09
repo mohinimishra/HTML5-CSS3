@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naming Area</title>
+</head>
+
+<style>
+    .container {
+        margin-left: 25rem;
+        margin-top: 5em;
+        width: 700px;
+        display: grid;
+        grid-template-rows: 120px 60px 100px 200px 50px;
+        grid-template-columns: repeat(3, 233px);
+        grid-gap: 10px;
+        grid-template-areas: "header header header"
+            "men men men"
+            "box1 box2 slidebar"
+            "content content slidebar"
+            "footer footer footer";
+    }
+
+    .header {
+        background-color: darkslateblue;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        grid-area: header;
+    }
+
+    .men {
+        background-color: rgb(185, 35, 85);
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        grid-area: men;
+    }
+
+    .box1 {
+        background-color: rgb(69, 151, 14);
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        grid-area: box1;
+    }
+
+    .box2 {
+        background-color: rgb(223, 202, 13);
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        grid-area: box2;
+    }
+
+    .content {
+        background-color: brown;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        grid-area: content;
+
+    }
+
+    .slidebar {
+        background-color: rgb(212, 85, 170);
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        grid-area: slidebar;
+
+    }
+
+    .footer {
+        background-color: rgb(26, 243, 142);
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        grid-area: footer;
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="men">Menu</div>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="slidebar">Slidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>

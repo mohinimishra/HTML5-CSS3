@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaning Grid Item</title>
+</head>
+
+<style>
+    .container {
+        background: #eee;
+        width: 700px;
+        margin: 50px 0 0 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(2, 150px);
+        grid-gap: 10px 15px;
+    }
+
+    .box1 {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+    }
+
+    .box2 {
+        grid-row: 2 / span 4;
+    }
+
+    .box4 {
+        grid-row: 2 / -1;
+        grid-column: 2 / 4;
+    }
+
+    .box6 {
+        grid-column: 2 / -1;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box1" style="background: red; color: white; font-size: 30px;">First</div>
+        <div class="box2" style="background: blueviolet; color: white; font-size: 30px;">Second</div>
+        <div class="box3" style="background: yellow; color: white; font-size: 30px;">Third</div>
+        <div class="box4" style="background: green; color: white; font-size: 30px;">Fourth</div>
+        <div class="box5" style="background: pink; color: white; font-size: 30px;">Fifth</div>
+        <div class="box6" style="background: brown; color: white; font-size: 30px;">Six</div>
+    </div>
+</body>
+
+</html>

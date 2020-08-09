@@ -1,0 +1,99 @@
+ht
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .container {
+            width: 700px;
+            display: grid;
+            grid-gap: 15px;
+            /* Explicit grid - which properties are styled particularly */
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2, 100px);
+
+            grid-auto-rows: 80px;
+            grid-auto-columns: .5fr;
+
+            align-items: center;
+
+        }
+
+        .one {
+            background-color: chartreuse;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .two {
+            background-color: darksalmon;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .three {
+            background-color: purple;
+            color: white;
+            font-size: 20px;
+            grid-row: 2 / span 3;
+        }
+
+        .four {
+            background-color: lightcoral;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .five {
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .six {
+            background-color: burlywood;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .seven {
+            background-color: goldenrod;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .eight {
+            background-color: lightgreen;
+            color: white;
+            font-size: 20px;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="one">OneTwo</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+        <div class="seven">Seven</div>
+        <div class="eight">Eight</div>
+    </div>
+</body>
+
+</html>

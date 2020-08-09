@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Lines Naming</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 700px;
+            /* margin: 50px 50px 50px 50px; */
+            margin-left: 25rem;
+            margin-top: 25px;
+            display: grid;
+            grid-template-rows: [header-start] 120px [header-end menu-start] 60px [menu-end box-start] 100px [box-end content-start] 400px[content-end footer-start] 50px [footer-end];
+            grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+            grid-gap: 15px 15px;
+        }
+
+        .header {
+            grid-column: col-start / col-end 3;
+            grid-row: header-start / header-end;
+        }
+
+        .menu {
+            grid-column: col-start / col-end 3;
+            grid-row: menu-start/ menu-end
+        }
+
+        .sidebar {
+            grid-row: box-start / content-end;
+        }
+
+        .content {
+            grid-row: content-start / content-end;
+            grid-column: col-start / col-end 2;
+        }
+
+        .footer {
+            grid-column: col-start / col-end 3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header" style="background-color: tomato; font-size: 30px;">Header</div>
+        <div class="menu" style="background-color: green; font-size: 30px;">Menu</div>
+        <div class="box1" style="background-color: rgb(105, 71, 255); font-size: 30px;">Box1</div>
+        <div class="bo2" style="background-color: rgb(255, 71, 200); font-size: 30px;">Box2</div>
+        <div class="sidebar" style="background-color: rgb(105, 71, 255); font-size: 30px;">sideBar</div>
+        <div class="content" style=" background-color: rgb(161, 236, 167); font-size: 30px;">Content</div>
+        <div class="footer" style=" background-color: orange ; font-size: 30px;"">Footer</div>
+    </div>
+</body>
+
+</html>
